@@ -1,0 +1,13 @@
+@import 'variables.css';
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--primary-dark-gray);
+  color: var(--primary-white);
+}

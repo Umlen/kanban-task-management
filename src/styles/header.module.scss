@@ -1,0 +1,62 @@
+@mixin flexMixin() {
+  display: flex;
+  align-items: center;
+}
+
+.flexRowContainer {
+  @include flexMixin();
+  padding: 16px;
+
+  @media (min-width: 700px) {
+    padding: 0 24px;
+    border-bottom: 1px solid var(--light-gray);
+    position: relative;
+  }
+
+  @media (min-width: 1280px) {
+    padding: 0 34px;
+  }
+}
+
+.logo,
+.addBtn,
+.logoWrapper {
+  margin-right: 16px;
+
+  @media (min-width: 700px) {
+    margin-right: 24px;
+  }
+
+  @media (min-width: 1280px) {
+    margin-right: 32px;
+  }
+}
+
+.borderNameWrapper {
+  @include flexMixin();
+  margin-right: auto;
+}
+
+.borderName {
+  margin-right: 8px;
+
+  @media (min-width: 700px) {
+    margin-right: auto;
+  }
+}
+
+/*Width > 700px*/
+
+.logoWrapper {
+  border-right: 1px solid var(--light-gray);
+  padding: 28px 24px 28px 0;
+
+  @media (min-width: 1280px) {
+    padding-right: 34px;
+  }
+}
+
+.controlPanel {
+  @include flexMixin();
+  width: 100%;
+}
